@@ -4,14 +4,12 @@ import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 import { Instagram } from 'lucide-react';
 
-const FALLBACK_IMAGES = [
-  '/images/gallery-1.jpg',
-  '/images/gallery-2.jpg',
-  '/images/gallery-3.jpg',
-  'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=600&fit=crop',
-  'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=600&fit=crop',
-];
+// All local paths so gallery works when hosted statically (no external APIs).
+// Add gallery-1.jpg through gallery-6.jpg under public/images/
+const getFallbackImagePaths = () => {
+  const base = typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_BASE_PATH ? process.env.NEXT_PUBLIC_BASE_PATH : '';
+  return [1, 2, 3, 4, 5, 6].map((n) => `${base}/images/gallery-${n}.jpg`);
+};
 
 interface GalleryImage {
   url: string;
@@ -24,8 +22,9 @@ export function GallerySection() {
 
   useEffect(() => {
     async function fetchImages() {
+      const base = typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_BASE_PATH ? process.env.NEXT_PUBLIC_BASE_PATH : '';
       try {
-        const res = await fetch('/api/instagram');
+        const res = await fetch(`${base}/api/instagram`);
         if (res.ok) {
           const data = await res.json();
           if (data.images && data.images.length > 0) {
@@ -36,7 +35,7 @@ export function GallerySection() {
       } catch {
         // fallback
       }
-      setImages(FALLBACK_IMAGES.map((url) => ({ url })));
+      setImages(getFallbackImagePaths().map((url) => ({ url })));
     }
     fetchImages();
   }, []);

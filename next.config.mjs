@@ -8,8 +8,10 @@ const isProd = process.env.NODE_ENV === 'production';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  
-  // Set the basePath only in production. 
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/BENANDESSERE' : '',
+  },
+  // Set the basePath only in production.
   // IMPORTANT: Replace 'your-repo-name' with your actual GitHub repository name!
   basePath: isProd ? '/BENANDESSERE' : '',
   

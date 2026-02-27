@@ -32,6 +32,24 @@ const dateLocales: Record<string, typeof enUS> = { it, de, en: enUS };
 
 const STEPS = ['step1', 'step2', 'step3', 'step4', 'step5', 'step6'] as const;
 
+// Generate time slots client-side for static hosting (when /api/availability is unavailable)
+const WORK_START = 9;
+const WORK_END = 18;
+const SLOT_INTERVAL = 30;
+
+function generateStaticSlots(durationMinutes: number): string[] {
+  const slots: string[] = [];
+  for (let hour = WORK_START; hour < WORK_END; hour++) {
+    for (let min = 0; min < 60; min += SLOT_INTERVAL) {
+      const endMinutes = hour * 60 + min + durationMinutes;
+      if (endMinutes <= WORK_END * 60) {
+        slots.push(`${String(hour).padStart(2, '0')}:${String(min).padStart(2, '0')}`);
+      }
+    }
+  }
+  return slots;
+}
+
 export function BookingSection() {
   const t = useTranslations('booking');
   const ts = useTranslations('services');
@@ -57,13 +75,17 @@ export function BookingSection() {
     setSelectedTime(null);
 
     const dateStr = format(selectedDate, 'yyyy-MM-dd');
-    fetch(`/api/availability?date=${dateStr}&duration=${selectedDuration.minutes}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setAvailableSlots(data.slots || []);
+    const basePath = typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_BASE_PATH ? process.env.NEXT_PUBLIC_BASE_PATH : '';
+    fetch(`${basePath}/api/availability?date=${dateStr}&duration=${selectedDuration.minutes}`)
+      .then((res) => {
+        if (res.ok) return res.json().then((data) => data.slots || []);
+        return [];
+      })
+      .then((slots) => {
+        setAvailableSlots(Array.isArray(slots) && slots.length > 0 ? slots : generateStaticSlots(selectedDuration.minutes));
       })
       .catch(() => {
-        setAvailableSlots([]);
+        setAvailableSlots(generateStaticSlots(selectedDuration.minutes));
       })
       .finally(() => setLoadingSlots(false));
   }, [selectedDate, selectedDuration]);
@@ -82,8 +104,9 @@ export function BookingSection() {
   const handleSubmit = async () => {
     setSubmitting(true);
     setError('');
+    const basePath = typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_BASE_PATH ? process.env.NEXT_PUBLIC_BASE_PATH : '';
     try {
-      const res = await fetch('/api/book', {
+      const res = await fetch(`${basePath}/api/book`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

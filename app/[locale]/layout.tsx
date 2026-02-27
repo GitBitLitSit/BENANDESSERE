@@ -17,6 +17,15 @@ const playfair = Playfair_Display({
   variable: '--font-playfair',
 });
 
+export function generateStaticParams() {
+  // Replace these with the actual language codes your app supports!
+  return [
+    { locale: 'en' },
+    { locale: 'es' },
+    { locale: 'fr' }
+  ];
+}
+
 export default async function LocaleLayout({
   children,
   params,

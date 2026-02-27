@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "services": "Servizi",
+    "gallery": "Galleria",
+    "booking": "Prenota",
+    "contact": "Contatto"
+  },
+  "hero": {
+    "subtitle": "by Larissa",
+    "tagline": "Ritrovare il benessere attraverso il potere del tocco",
+    "cta": "Prenota Ora"
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Scopri i nostri trattamenti personalizzati per il tuo benessere",
+    "from": "da",
+    "minutes": "Min",
+    "lotusFlow": {
+      "name": "Entspannungsmassage Lotus Flow",
+      "detail": "Piedi - Mani - Testa",
+      "description": "Un massaggio rilassante che si concentra su piedi, mani e testa per sciogliere le tensioni e ristabilire l'equilibrio energetico del corpo."
+    },
+    "classic": {
+      "name": "Massaggio Classico e Sportivo",
+      "detail": "",
+      "description": "Tecniche classiche e sportive per alleviare la tensione muscolare, migliorare la circolazione e favorire il recupero fisico."
+    },
+    "honey": {
+      "name": "Massaggio Miele-Linfodrenaggio",
+      "detail": "",
+      "description": "Un trattamento unico che combina le proprietà purificanti del miele con tecniche di drenaggio linfatico per disintossicare e rivitalizzare."
+    },
+    "prana": {
+      "name": "Massaggio Prana",
+      "detail": "Forza Vitale",
+      "description": "Un'esperienza profonda di 110 minuti che risveglia la forza vitale interiore attraverso tecniche energetiche e movimenti fluidi."
+    },
+    "footReflex": {
+      "name": "Riflessologia Plantare",
+      "detail": "",
+      "description": "Pressione mirata sui punti riflessi dei piedi per stimolare gli organi interni e promuovere l'autoguarigione naturale."
+    }
+  },
+  "gallery": {
+    "title": "Galleria",
+    "subtitle": "Momenti di benessere dal nostro studio",
+    "followUs": "Seguici su Instagram"
+  },
+  "booking": {
+    "title": "Prenota il Tuo Appuntamento",
+    "subtitle": "Scegli il trattamento e prenota il tuo momento di relax",
+    "step1": "Servizio",
+    "step2": "Durata",
+    "step3": "Data",
+    "step4": "Orario",
+    "step5": "Dati",
+    "step6": "Conferma",
+    "selectService": "Scegli un servizio",
+    "selectDuration": "Scegli la durata",
+    "selectDate": "Scegli una data",
+    "selectTime": "Scegli un orario",
+    "yourDetails": "I tuoi dati",
+    "name": "Nome completo",
+    "email": "Email",
+    "phone": "Telefono",
+    "notes": "Note (opzionale)",
+    "notesPlaceholder": "Allergie, preferenze particolari...",
+    "next": "Avanti",
+    "back": "Indietro",
+    "confirm": "Conferma Prenotazione",
+    "summary": "Riepilogo",
+    "service": "Servizio",
+    "duration": "Durata",
+    "date": "Data",
+    "time": "Orario",
+    "price": "Prezzo",
+    "success": "Prenotazione Confermata!",
+    "successMessage": "Riceverai un'email di conferma con tutti i dettagli.",
+    "bookAnother": "Prenota un altro appuntamento",
+    "noSlots": "Nessun orario disponibile per questa data",
+    "loading": "Caricamento...",
+    "error": "Si è verificato un errore. Riprova.",
+    "required": "Campo obbligatorio",
+    "invalidEmail": "Email non valida",
+    "invalidPhone": "Numero di telefono non valido"
+  },
+  "contact": {
+    "title": "Contatto",
+    "subtitle": "Non esitare a contattarci per qualsiasi domanda",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "Email",
+    "hours": "Orari",
+    "hoursValue": "Lun - Sab: 9:00 - 18:00",
+    "followUs": "Seguici"
+  },
+  "footer": {
+    "tagline": "Il tuo percorso verso il benessere inizia qui.",
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Privacy",
+    "imprint": "Impressum"
+  }
+}

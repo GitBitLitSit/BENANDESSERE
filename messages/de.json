@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "services": "Leistungen",
+    "gallery": "Galerie",
+    "booking": "Buchen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "subtitle": "by Larissa",
+    "tagline": "Wohlbefinden durch die Kraft der Berührung wiederentdecken",
+    "cta": "Jetzt Buchen"
+  },
+  "services": {
+    "title": "Unsere Leistungen",
+    "subtitle": "Entdecken Sie unsere maßgeschneiderten Behandlungen für Ihr Wohlbefinden",
+    "from": "ab",
+    "minutes": "Min",
+    "lotusFlow": {
+      "name": "Entspannungsmassage Lotus Flow",
+      "detail": "Füße - Hände - Kopf",
+      "description": "Eine entspannende Massage, die sich auf Füße, Hände und Kopf konzentriert, um Spannungen zu lösen und das energetische Gleichgewicht wiederherzustellen."
+    },
+    "classic": {
+      "name": "Klassische- und Sportmassage",
+      "detail": "",
+      "description": "Klassische und sportliche Techniken zur Linderung von Muskelverspannungen, Verbesserung der Durchblutung und Förderung der körperlichen Erholung."
+    },
+    "honey": {
+      "name": "Honig-Lymphdrainage-Massage",
+      "detail": "",
+      "description": "Eine einzigartige Behandlung, die die reinigenden Eigenschaften von Honig mit Lymphdrainage-Techniken verbindet, um zu entgiften und zu revitalisieren."
+    },
+    "prana": {
+      "name": "Prana-Massage",
+      "detail": "Lebenskraft",
+      "description": "Ein tiefgreifendes 110-minütiges Erlebnis, das die innere Lebenskraft durch energetische Techniken und fließende Bewegungen erweckt."
+    },
+    "footReflex": {
+      "name": "Fußreflexzonenmassage",
+      "detail": "",
+      "description": "Gezielte Druckpunktmassage an den Reflexzonen der Füße zur Stimulierung der inneren Organe und Förderung der natürlichen Selbstheilung."
+    }
+  },
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Momente des Wohlbefindens aus unserem Studio",
+    "followUs": "Folgen Sie uns auf Instagram"
+  },
+  "booking": {
+    "title": "Termin Buchen",
+    "subtitle": "Wählen Sie Ihre Behandlung und buchen Sie Ihren Moment der Entspannung",
+    "step1": "Leistung",
+    "step2": "Dauer",
+    "step3": "Datum",
+    "step4": "Uhrzeit",
+    "step5": "Daten",
+    "step6": "Bestätigung",
+    "selectService": "Wählen Sie eine Leistung",
+    "selectDuration": "Wählen Sie die Dauer",
+    "selectDate": "Wählen Sie ein Datum",
+    "selectTime": "Wählen Sie eine Uhrzeit",
+    "yourDetails": "Ihre Daten",
+    "name": "Vollständiger Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "notes": "Anmerkungen (optional)",
+    "notesPlaceholder": "Allergien, besondere Wünsche...",
+    "next": "Weiter",
+    "back": "Zurück",
+    "confirm": "Buchung Bestätigen",
+    "summary": "Zusammenfassung",
+    "service": "Leistung",
+    "duration": "Dauer",
+    "date": "Datum",
+    "time": "Uhrzeit",
+    "price": "Preis",
+    "success": "Buchung Bestätigt!",
+    "successMessage": "Sie erhalten eine Bestätigungs-E-Mail mit allen Details.",
+    "bookAnother": "Einen weiteren Termin buchen",
+    "noSlots": "Keine verfügbaren Zeiten für dieses Datum",
+    "loading": "Laden...",
+    "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "required": "Pflichtfeld",
+    "invalidEmail": "Ungültige E-Mail",
+    "invalidPhone": "Ungültige Telefonnummer"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Zögern Sie nicht, uns bei Fragen zu kontaktieren",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "hours": "Öffnungszeiten",
+    "hoursValue": "Mo - Sa: 9:00 - 18:00",
+    "followUs": "Folgen Sie uns"
+  },
+  "footer": {
+    "tagline": "Ihr Weg zum Wohlbefinden beginnt hier.",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "imprint": "Impressum"
+  }
+}

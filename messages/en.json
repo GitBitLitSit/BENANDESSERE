@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "services": "Services",
+    "gallery": "Gallery",
+    "booking": "Book Now",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "by Larissa",
+    "tagline": "Rediscover wellbeing through the power of touch",
+    "cta": "Book Now"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Discover our personalized treatments for your wellbeing",
+    "from": "from",
+    "minutes": "Min",
+    "lotusFlow": {
+      "name": "Relaxation Massage Lotus Flow",
+      "detail": "Feet - Hands - Head",
+      "description": "A relaxing massage focusing on feet, hands, and head to release tension and restore the body's energetic balance."
+    },
+    "classic": {
+      "name": "Classic & Sports Massage",
+      "detail": "",
+      "description": "Classic and sports techniques to relieve muscle tension, improve circulation, and promote physical recovery."
+    },
+    "honey": {
+      "name": "Honey Lymphatic Drainage Massage",
+      "detail": "",
+      "description": "A unique treatment combining the purifying properties of honey with lymphatic drainage techniques to detoxify and revitalize."
+    },
+    "prana": {
+      "name": "Prana Massage",
+      "detail": "Life Force",
+      "description": "A profound 110-minute experience that awakens your inner life force through energetic techniques and flowing movements."
+    },
+    "footReflex": {
+      "name": "Foot Reflexology",
+      "detail": "",
+      "description": "Targeted pressure on reflex points of the feet to stimulate internal organs and promote natural self-healing."
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments of wellbeing from our studio",
+    "followUs": "Follow us on Instagram"
+  },
+  "booking": {
+    "title": "Book Your Appointment",
+    "subtitle": "Choose your treatment and book your moment of relaxation",
+    "step1": "Service",
+    "step2": "Duration",
+    "step3": "Dates",
+    "step4": "Time",
+    "step5": "Details",
+    "step6": "Confirm",
+    "selectService": "Choose a service",
+    "selectDuration": "Choose a duration",
+    "selectDate": "Choose a date",
+    "selectTime": "Choose a time",
+    "yourDetails": "Your details",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Allergies, special preferences...",
+    "next": "Next",
+    "back": "Back",
+    "confirm": "Confirm Booking",
+    "summary": "Summary",
+    "service": "Service",
+    "duration": "Duration",
+    "date": "Date",
+    "time": "Time",
+    "price": "Price",
+    "success": "Booking Confirmed!",
+    "successMessage": "You will receive a confirmation email with all the details.",
+    "bookAnother": "Book another appointment",
+    "noSlots": "No available times for this date",
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again.",
+    "required": "Required field",
+    "invalidEmail": "Invalid email",
+    "invalidPhone": "Invalid phone number"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Don't hesitate to reach out with any questions",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "hoursValue": "Mon - Sat: 9:00 AM - 6:00 PM",
+    "followUs": "Follow Us"
+  },
+  "footer": {
+    "tagline": "Your journey to wellbeing starts here.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "imprint": "Imprint"
+  }
+}

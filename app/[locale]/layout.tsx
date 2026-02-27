@@ -18,11 +18,10 @@ const playfair = Playfair_Display({
 });
 
 export function generateStaticParams() {
-  // Replace these with the actual language codes your app supports!
   return [
     { locale: 'en' },
-    { locale: 'es' },
-    { locale: 'fr' }
+    { locale: 'de' },
+    { locale: 'it' }
   ];
 }
 

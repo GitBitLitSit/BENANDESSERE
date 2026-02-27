@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAvailableSlots } from '@/lib/google-calendar';
 
-export const dynamic = 'force-static';
+//export const dynamic = 'force-static';
 
-export async function GET(request: NextRequest) {
+/*export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const date = searchParams.get('date');
   const duration = parseInt(searchParams.get('duration') || '50', 10);
@@ -32,4 +32,4 @@ export async function GET(request: NextRequest) {
       { status: 500 }
     );
   }
-}
+}*/

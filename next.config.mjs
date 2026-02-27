@@ -11,7 +11,7 @@ const nextConfig = {
   
   // Set the basePath only in production. 
   // IMPORTANT: Replace 'your-repo-name' with your actual GitHub repository name!
-  basePath: isProd ? '/your-repo-name' : '',
+  basePath: isProd ? '/BENANDESSERE' : '',
   
   typescript: {
     ignoreBuildErrors: true,

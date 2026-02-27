@@ -1,5 +1,6 @@
+// 1. Add setRequestLocale to your import from 'next-intl/server'
+import { getMessages, setRequestLocale } from 'next-intl/server';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { DM_Sans, Playfair_Display } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
@@ -34,10 +35,14 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
+  // 2. IMPORTANT: Set the static locale BEFORE getting messages!
+  setRequestLocale(locale);
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
+  // Now this will work perfectly without checking headers
   const messages = await getMessages();
 
   return (
